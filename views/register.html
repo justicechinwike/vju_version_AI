@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Account | VJU Vision AI</title>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <form class="auth-card" id="registerForm">
+      <h1>Create your account</h1>
+      <p>Start with an educational VJU Vision AI workspace.</p>
+      <label>Full name<input id="fullName" name="fullName" required></label>
+      <label>Email address<input id="email" name="email" type="email" required></label>
+      <label>Country<input id="country" name="country"></label>
+      <label>Password<input id="password" name="password" type="password" minlength="8" required></label>
+      <label>Confirm password<input id="confirmPassword" name="confirmPassword" type="password" minlength="8" required></label>
+      <label class="check"><input id="terms" type="checkbox"> I accept the Terms and Privacy Policy.</label>
+      <button type="submit">Create account</button>
+      <div id="message" class="message" role="alert"></div>
+      <a href="/login">Already have an account? Sign in</a>
+    </form>
+  </main>
+  <script src="/js/register.js"></script>
+</body>
+</html>

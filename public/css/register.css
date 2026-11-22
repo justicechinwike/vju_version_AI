@@ -1,0 +1,7 @@
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#ddecff;background:#07111f}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,#123763 0,#091728 43%,#050c16 100%)}
+.auth-shell{width:100%;display:grid;place-items:center;padding:30px}.auth-card{width:min(440px,100%);background:rgba(10,25,44,.94);border:1px solid #1d5274;border-radius:14px;padding:36px;box-shadow:0 30px 80px #02050a}
+h1{margin:0;font-size:26px}p{color:#849bb4;margin:8px 0 20px}label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#98abc2;margin-top:14px}
+input:not([type=checkbox]){display:block;width:100%;margin-top:7px;padding:12px;background:#07131f;border:1px solid #1b3c58;border-radius:7px;color:white}
+.check{display:flex;align-items:center;gap:8px;text-transform:none}.check input{margin:0}button{width:100%;margin-top:18px;padding:13px;border:1px solid #29caeb;border-radius:7px;background:#0e5872;color:#cdf8ff;text-transform:uppercase;font-weight:700}
+.auth-card>a{display:block;text-align:center;margin-top:18px;color:#72dff4;text-decoration:none}.message{min-height:18px;margin-top:10px;color:#ff9d9d}

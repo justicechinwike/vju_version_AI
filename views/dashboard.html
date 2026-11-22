@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VJU Vision AI Command Centre</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-orb">J</div><div><strong>JARVIS</strong><small>COMMAND CENTER</small></div></div>
+    <nav>
+      <a class="active" href="/dashboard"><span>▦</span> Command Center</a>
+      <a href="/ai-chat"><span>◉</span> AI Core</a>
+      <a href="/admin"><span>□</span> Agents</a>
+      <a href="/recordings"><span>▤</span> Tasks</a>
+      <a href="/reports"><span>▦</span> Calendar</a>
+      <a href="/reports"><span>▱</span> Memory</a>
+      <a href="/ai-chat"><span>▰</span> Conversations <b>12</b></a>
+      <a href="/learning"><span>✣</span> Knowledge Base</a>
+      <a href="/screen-assistant"><span>⌁</span> Tools &amp; Skills <b>18</b></a>
+      <a href="/settings"><span>⚙</span> Workflows</a>
+    </nav>
+    <div class="voice-status"><span>VOICE STATUS</span><i></i><button id="micButton" title="Microphone">◉</button><small>Tap to Speak</small></div>
+    <button class="focus-button">⚡ Focus Mode</button>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div class="status">SYSTEM STATUS <strong><i></i> OPTIMAL</strong></div>
+      <time><strong id="clock">11:18:21 am</strong><small id="date">Monday, 16 June 2026</small></time>
+      <div class="tools">
+        <button class="search">⌕ <span>Search</span></button>
+        <button>+</button><button>▦</button><button>♚</button><button>⚙</button>
+        <div class="operator">Operator<br><small id="userName">GV Admin</small></div>
+      </div>
+    </header>
+
+    <section class="dashboard-grid">
+      <section class="panel ai-core">
+        <h2>AI CORE OVERVIEW</h2>
+        <div class="core-list">
+          <button><i class="blue">AI</i><span><strong>AI Core</strong><small>Active</small></span></button>
+          <button><i>MEM</i><span><strong>Memory</strong><small>3,380 stored</small></span></button>
+          <button><i>CPU</i><span><strong>CPU</strong><small>Optimal</small></span></button>
+          <button><i>AG</i><span><strong>Agents</strong><small>12 Running</small></span></button>
+          <button><i>LLM</i><span><strong>LLMs</strong><small>6 Connected</small></span></button>
+          <button><i>SYS</i><span><strong>System</strong><small>Optimal</small></span></button>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="orbital">
+          <div class="orbit ring-one"></div><div class="orbit ring-two"></div>
+          <div class="hero-title"><strong>J A R V I S</strong><span>AI CORE</span><small>v3.0.0</small></div>
+        </div>
+      </section>
+
+      <section class="panel intelligence">
+        <h2>LIVE INTELLIGENCE FEED <strong><i></i> LIVE</strong></h2>
+        <article><i class="cyan">▱</i><div><strong>Vision review complete</strong><small>Chart region and indicators processed.</small></div><b>INFO</b></article>
+        <article><i class="amber">△</i><div><strong>2 tasks awaiting review</strong><small>Open the analysis queue.</small></div><b>WARN</b></article>
+        <article><i class="blue">⌁</i><div><strong>3 pull requests are waiting</strong><small>Workflow activity.</small></div><b>GITHUB</b></article>
+        <article><i class="cyan">◉</i><div><strong>Deep-work block active</strong><small>Vision assistant is standing by.</small></div><b>LIVE</b></article>
+        <a href="/reports">View All Intelligence</a>
+      </section>
+
+      <section class="panel agents">
+        <h2>ACTIVE AGENTS <a href="/admin">View All</a></h2>
+        <div class="agent-grid">
+          <button><i>&lt;/&gt;</i><span><strong>Coding Agent</strong><small>● Active</small></span><em>|||</em></button>
+          <button><i>⌕</i><span><strong>Research Agent</strong><small>● Active</small></span><em>|||</em></button>
+          <button><i>▱</i><span><strong>Memory Agent</strong><small>● Active</small></span><em>|||</em></button>
+          <button><i>◉</i><span><strong>Browser Agent</strong><small>● Standby</small></span><em>|||</em></button>
+          <button><i>≡</i><span><strong>Task Agent</strong><small>● 2 Pending</small></span><em>|||</em></button>
+          <button><i>✓</i><span><strong>System Agent</strong><small>● Standby</small></span><em>|||</em></button>
+        </div>
+      </section>
+
+      <section class="panel timeline">
+        <h2>MISSION TIMELINE <span>Today⌄</span></h2>
+        <div class="timeline-row"><time>06:30</time><i></i><span><strong>Daily Standup</strong><small>09:84</small></span></div>
+        <div class="timeline-row"><time>12:00</time><i></i><span><strong>Deep-work session</strong><small>11:25 - 11:35</small></span></div>
+        <div class="timeline-row now"><time>02:00</time><i></i><span><strong>Design review — Command Center</strong><small>11:30 - 11:35</small></span></div>
+        <a href="/reports">View Full Schedule</a>
+      </section>
+
+      <section class="panel quick">
+        <h2>QUICK COMMANDS</h2>
+        <a href="/screen-assistant">＋ Start New Task</a>
+        <a href="/reports">▦ Open Calendar</a>
+        <a href="/ai-chat">○ Start Voice Chat</a>
+        <a href="/learning">▷ Run Workflow</a>
+      </section>
+
+      <section class="panel system-monitor">
+        <h2>SYSTEM MONITOR</h2>
+        <div class="gauge cpu"><span>CPU<br><strong>15%</strong></span></div>
+        <div class="gauge ram"><span>RAM<br><strong>54%</strong></span></div>
+        <div class="gauge disk"><span>DISK<br><strong>40%</strong></span></div>
+      </section>
+
+      <section class="panel memory">
+        <h2>MEMORY INSIGHTS</h2>
+        <div class="memory-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <a href="/reports">View Memory Map</a>
+        <dl><div><dt>Memories</dt><dd>3,380</dd></div><div><dt>Sessions</dt><dd>22</dd></div><div><dt>Topics</dt><dd>14</dd></div></dl>
+      </section>
+
+      <section class="panel llm">
+        <h2>LLM STATUS <strong>6 Connected</strong></h2>
+        <div><button><i>9</i><span><strong>Gemini</strong><small>Connected</small></span></button><button><i>AI</i><span><strong>OpenAI</strong><small>Connected</small></span></button></div>
+        <div><button><i>G</i><span><strong>Claude</strong><small>Connected</small></span></button><button><i>◇</i><span><strong>Grok</strong><small>Connected</small></span></button></div>
+        <a href="/settings">Manage Providers</a>
+      </section>
+    </section>
+
+    <footer class="command-bar">
+      <div class="history-users"><i>◉</i><i>✣</i><i>◈</i></div>
+      <button id="talkButton"><i>◉</i><span>TALK TO JARVIS<small>I am listening...</small></span></button>
+      <button class="briefing">▷ <span>Executing Briefing</span></button>
+    </footer>
+  </main>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

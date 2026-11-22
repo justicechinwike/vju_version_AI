@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Screen Assistant | VJU Vision AI</title><link rel="stylesheet" href="/css/screen-assistant.css"></head>
+<body>
+  <aside id="sidebar"></aside>
+  <main class="module-shell">
+    <header><a href="/dashboard">← Command Center</a><h1>Screen Assistant</h1><span id="sessionStatus">Idle</span></header>
+    <section class="capture-grid">
+      <article class="preview"><div class="preview-grid"><span>AUTHORIZED SCREEN PREVIEW</span></div><div class="capture-actions"><button id="monitorButton">Start Monitoring</button><button id="stopButton" disabled>Stop Monitoring</button></div></article>
+      <aside class="controls"><h2>Capture Source</h2><label><input type="radio" name="source" value="full-screen" checked> Full screen</label><label><input type="radio" name="source" value="window"> Application window</label><label><input type="radio" name="source" value="region"> Selected region</label><h2>Screenshot Upload</h2><input id="screenshot" type="file" accept="image/png,image/jpeg,image/webp"><button id="uploadButton">Validate &amp; Analyze</button><div id="message" class="message"></div></aside>
+    </section>
+  </main>
+  <script src="/js/screen-assistant.js"></script>
+</body>
+</html>

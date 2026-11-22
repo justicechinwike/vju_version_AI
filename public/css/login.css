@@ -1,0 +1,13 @@
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#ddecff;background:#07111f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 70% 20%,#123763 0,#091728 42%,#050c16 100%)}
+.auth-shell{min-height:100vh;display:grid;grid-template-columns:1fr 420px;align-items:center;gap:8vw;padding:5vw}
+.brand-panel{text-align:center}.brand-mark{width:82px;height:82px;margin:auto;border:1px solid #55d7ff;border-radius:50%;display:grid;place-items:center;font-size:44px;color:#91efff;box-shadow:0 0 40px #1bbce566}
+.brand-panel h1{letter-spacing:.24em;font-size:34px;margin:24px 0 8px}.brand-panel p{color:#839bb7}
+.auth-card{background:rgba(10,25,44,.9);border:1px solid #1d5274;border-radius:14px;padding:38px;box-shadow:0 30px 80px #02050a}
+.auth-card h2,.auth-card h1{margin:0 0 8px}.auth-card p{margin:0 0 24px;color:#7e96b1}
+label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#98abc2;margin-top:16px}
+input{display:block;width:100%;margin-top:8px;padding:13px;background:#07131f;border:1px solid #1b3c58;border-radius:7px;color:white}
+button{width:100%;margin-top:24px;padding:13px;border:1px solid #29caeb;border-radius:7px;background:#0e5872;color:#cdf8ff;text-transform:uppercase;font-weight:700;letter-spacing:.08em}
+.auth-card>a{display:block;text-align:center;margin-top:20px;color:#72dff4;text-decoration:none}.message{min-height:18px;margin-top:12px;color:#ff9d9d}
+@media(max-width:780px){.auth-shell{grid-template-columns:1fr;padding:24px}.brand-panel{display:none}.auth-card{width:100%}}
